@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Immortals Login</title>
+  </head>
+  <body>
+    <h1>Login Credentials</h1>
+    <form action="./index" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+     <!--<input type="button" value="Login" onclick="login()">-->
+      <input type="submit">
+    </form>
+    <p id="result"></p>
+    <script>
+      function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        //  if (username === "Immortals" && password === "AggiePride") {
+        //   document.getElementById("result").innerHTML = "Login successful!";
+        //   console.log(username);
+        //   console.log(password);
+        // } else {
+        //   document.getElementById("result").innerHTML = "Error: Try again.";
+        //   console.log(username);
+        //   console.log(password);
+        // }
+
+        var successfulLogin = checkLogin(username, password);
+      }
+    </script>
+  </body>
+</html>
